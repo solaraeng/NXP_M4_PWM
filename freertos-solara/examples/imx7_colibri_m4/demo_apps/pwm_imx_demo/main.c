@@ -1,7 +1,7 @@
 /*
  * Copyright (c) 2015, Freescale Semiconductor, Inc.
  * All rights reserved.
- *
+ ***************************************************************************************
  * Project - mx7_colibri_m4_PWM_imx_demo (PWM Modulator)
  * Created by : Mario Ghecea
  * Solara Engineering (solaraeng@gmail.com)
@@ -12,7 +12,7 @@
  * This could be used as a generic LED driver, contrast for a display and perhaps
  * motor control through expansion.
  * If you reuse or distribute for your purpose please keep this header...
- *
+ *****************************************************************************************
  * Redistribution and use in source and binary forms, with or without modification,
  * are permitted provided that the following conditions are met:
  *
@@ -50,7 +50,7 @@
 #define PWM_MIN 				 (0.1f) // Lets assume 1% phase increases
 #define PWM_MAX					 (1.0f) // Lets assume your phase max at 100%
 #define PWM_FREQ_DIVIDER         1      // Your PWM period frequency divider in milliseconds (1/PWM_FREQ_DIVIDER) - LED Bink Interval
-#define PWM_STEPS_PER_PHASE		 15	    // Increment PWM_STEPS_PER_PHASE for a higher resolution (Above 20 it suddenly glitches)
+#define PWM_STEPS_PER_PHASE		 20	    // Increment PWM_STEPS_PER_PHASE for a higher resolution (Above 20 it suddenly glitches)
 #define PWM_RESOLUTION_COUNTER  (1000/(PWM_FREQ_DIVIDER * PWM_STEPS_PER_PHASE))   // Value in ms per phase
 
 static volatile uint32_t blinkingIntervalHigh = PWM_RESOLUTION_COUNTER;
@@ -75,7 +75,7 @@ void ToggleTask(void *pvParameters)
     {
     	if (blinkingIntervalHigh != 0 && start == true)
     	{
-    		// If we have been signalled to start, lets sync the PWM phase
+    		// If we have been signaled to start, lets sync the PWM phase
     		SyncPWM();
     		// Process PWM Phase High
 			GPIO_Ctrl_ToggleLed(true);
