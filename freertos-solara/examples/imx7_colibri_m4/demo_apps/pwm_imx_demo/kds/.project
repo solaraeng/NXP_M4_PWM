@@ -90,11 +90,6 @@
 			<locationURI>virtual:/virtual</locationURI>
 		</link>
 		<link>
-			<name>sources/examples/imx7_colibri_m4/FreeRTOSConfig.h</name>
-			<type>1</type>
-			<locationURI>PARENT-3-PROJECT_LOC/FreeRTOSConfig.h</locationURI>
-		</link>
-		<link>
 			<name>sources/examples/imx7_colibri_m4/board.c</name>
 			<type>1</type>
 			<locationURI>PARENT-3-PROJECT_LOC/board.c</locationURI>
