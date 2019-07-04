@@ -137,7 +137,6 @@ void BOARD_PWM2_HANDLER(void)
 ******************************************************************************/
 int main(void)
 {
-	static long incr2 = 0;
 	uint32_t inter;
     pwm_config_t pwmConfig;
     
