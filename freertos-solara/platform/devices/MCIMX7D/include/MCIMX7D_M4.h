@@ -33289,16 +33289,22 @@ typedef struct {
 #define PWM_PWMCR_POUTC(x)                       (((uint32_t)(((uint32_t)(x))<<PWM_PWMCR_POUTC_SHIFT))&PWM_PWMCR_POUTC_MASK)
 #define PWM_PWMCR_HCTR_MASK                      0x100000u
 #define PWM_PWMCR_HCTR_SHIFT                     20
+#define PWM_PWMCR_HCTR(x)                        (((uint32_t)(((uint32_t)(x)) << PWM_PWMCR_HCTR_SHIFT)) & PWM_PWMCR_HCTR_MASK)
 #define PWM_PWMCR_BCTR_MASK                      0x200000u
 #define PWM_PWMCR_BCTR_SHIFT                     21
+#define PWM_PWMCR_BCTR(x)                        (((uint32_t)(((uint32_t)(x)) << PWM_PWMCR_BCTR_SHIFT)) & PWM_PWMCR_BCTR_MASK)
 #define PWM_PWMCR_DBGEN_MASK                     0x400000u
 #define PWM_PWMCR_DBGEN_SHIFT                    22
+#define PWM_PWMCR_DBGEN(x)                       (((uint32_t)(((uint32_t)(x)) << PWM_PWMCR_DBGEN_SHIFT)) & PWM_PWMCR_DBGEN_MASK)
 #define PWM_PWMCR_WAITEN_MASK                    0x800000u
 #define PWM_PWMCR_WAITEN_SHIFT                   23
+#define PWM_PWMCR_WAITEN(x)                      (((uint32_t)(((uint32_t)(x)) << PWM_PWMCR_WAITEN_SHIFT)) & PWM_PWMCR_WAITEN_MASK)
 #define PWM_PWMCR_DOZEN_MASK                     0x1000000u
 #define PWM_PWMCR_DOZEN_SHIFT                    24
+#define PWM_PWMCR_DOZEN(x)                       (((uint32_t)(((uint32_t)(x)) << PWM_PWMCR_DOZEN_SHIFT)) & PWM_PWMCR_DOZEN_MASK)
 #define PWM_PWMCR_STOPEN_MASK                    0x2000000u
 #define PWM_PWMCR_STOPEN_SHIFT                   25
+#define PWM_PWMCR_STOPEN(x)                      (((uint32_t)(((uint32_t)(x)) << PWM_PWMCR_STOPEN_SHIFT)) & PWM_PWMCR_STOPEN_MASK)
 #define PWM_PWMCR_FWM_MASK                       0xC000000u
 #define PWM_PWMCR_FWM_SHIFT                      26
 #define PWM_PWMCR_FWM(x)                         (((uint32_t)(((uint32_t)(x))<<PWM_PWMCR_FWM_SHIFT))&PWM_PWMCR_FWM_MASK)

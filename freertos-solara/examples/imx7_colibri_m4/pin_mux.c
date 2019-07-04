@@ -192,6 +192,15 @@ void configure_uart_pins(UART_Type* base)
     }
 }
 
+
+void configure_pwm_pins(PWM_Type* base)
+{
+        // PWM2 iomux configuration
+
+        /* iomux */
+        IOMUXC_SW_MUX_CTL_PAD_GPIO1_IO09 = IOMUXC_SW_MUX_CTL_PAD_GPIO1_IO09_MUX_MODE(7);
+
+}
 /*******************************************************************************
  * EOF
  ******************************************************************************/

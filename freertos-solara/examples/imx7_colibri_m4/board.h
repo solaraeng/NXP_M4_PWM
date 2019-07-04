@@ -42,6 +42,32 @@
 #define BOARD_NAME                            "IMX7_COLIBRI_M4"
 #define BOARD_DOMAIN_ID                       (1)
 
+/* PWM information for this board */
+#define BOARD_PWM1_RDC_PDAP				      rdcPdapPwm1
+#define BOARD_PWM1_CCM_CCGR				      ccmCcgrGatePwm1
+#define BOARD_PWM1_BASEADDR					  PWM1
+#define BOARD_PWM1_IRQ_NUM					  PWM1_IRQn
+#define	BOARD_PWM1_HANDLER					  PWM1_Handler
+
+#define BOARD_PWM2_RDC_PDAP				      rdcPdapPwm2
+#define BOARD_PWM2_CCM_CCGR				      ccmCcgrGatePwm2
+#define BOARD_PWM2_BASEADDR					  PWM2
+#define BOARD_PWM2_IRQ_NUM					  PWM2_IRQn
+#define	BOARD_PWM2_HANDLER					  PWM2_Handler
+
+#define BOARD_PWM3_RDC_PDAP				      rdcPdapPwm3
+#define BOARD_PWM3_CCM_CCGR				      ccmCcgrGatePwm3
+#define BOARD_PWM3_BASEADDR					  PWM3
+#define BOARD_PWM3_IRQ_NUM					  PWM3_IRQn
+#define	BOARD_PWM3_HANDLER					  PWM3_Handler
+
+#define BOARD_PWM4_RDC_PDAP				      rdcPdapPwm4
+#define BOARD_PWM4_CCM_CCGR				      ccmCcgrGatePwm4
+#define BOARD_PWM4_BASEADDR					  PWM4
+#define BOARD_PWM4_IRQ_NUM					  PWM4_IRQn
+#define	BOARD_PWM4_HANDLER					  PWM4_Handler
+
+
 /* ADC information for this board */
 #define BOARD_ADC_RDC_PDAP                    rdcPdapAdc1
 #define BOARD_ADC_CCM_CCGR                    ccmCcgrGateAdc

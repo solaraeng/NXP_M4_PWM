@@ -297,6 +297,10 @@ enum _ccm_ccgr_gate
     ccmCcgrGateGpt2      = (uint32_t)(&CCM_CCGR125), /*!< GPT2 Clock Gate.*/
     ccmCcgrGateGpt3      = (uint32_t)(&CCM_CCGR126), /*!< GPT3 Clock Gate.*/
     ccmCcgrGateGpt4      = (uint32_t)(&CCM_CCGR127), /*!< GPT4 Clock Gate.*/
+	ccmCcgrGatePwm1      = (uint32_t)(&CCM_CCGR132), /*!< PWM1 Clock Gate.*/
+    ccmCcgrGatePwm2      = (uint32_t)(&CCM_CCGR133), /*!< PWM2 Clock Gate.*/
+    ccmCcgrGatePwm3      = (uint32_t)(&CCM_CCGR134), /*!< PWM3 Clock Gate.*/
+    ccmCcgrGatePwm4      = (uint32_t)(&CCM_CCGR135), /*!< PWM4 Clock Gate.*/
     ccmCcgrGateI2c1      = (uint32_t)(&CCM_CCGR136), /*!< I2C1 Clock Gate.*/
     ccmCcgrGateI2c2      = (uint32_t)(&CCM_CCGR137), /*!< I2C2 Clock Gate.*/
     ccmCcgrGateI2c3      = (uint32_t)(&CCM_CCGR138), /*!< I2C3 Clock Gate.*/
